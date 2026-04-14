@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Welcome Page - CCIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        nav {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            padding: 20px 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 2.2em;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Home page</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Welcome</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Welcome to Home page</h1>
+        <p>Explore our Cloud Computing Solutions</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>About CCIT</h2>
+            <p>
+                Welcome to CCIT - your trusted partner for cloud computing and IT solutions. 
+                We provide innovative technology solutions that help businesses thrive in the digital world.
+            </p>
+            <p style="margin-top: 15px;">
+                Our team is dedicated to delivering exceptional service and supporting your organization's growth.
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 CCIT. All rights reserved.</p>
+    </footer>
 </body>
 </html>
